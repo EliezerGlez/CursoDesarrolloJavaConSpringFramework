@@ -8,16 +8,11 @@ public class Ejercicio05 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int numero = (int)(Math. random()*10+1);
-		
-		System.out.println(numero);
-		
-		for (int i = 0; i < 5; i++) {
-			
-			numero = (int)(Math. random()*10+1);
-			
-			System.out.println("Con bucle for: " + numero);
-		}
+		// Generar un número aleatorio entre 1 y 10 (ambos inclusive)
+        int numeroAleatorio = (int) (Math.random() * 10) + 1;
+
+        // Mostrar el número aleatorio
+        System.out.println("Número aleatorio entre 1 y 10: " + numeroAleatorio);
 
 	}
 

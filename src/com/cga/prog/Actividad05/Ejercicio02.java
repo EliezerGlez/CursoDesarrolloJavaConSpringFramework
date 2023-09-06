@@ -12,17 +12,21 @@ public class Ejercicio02 {
 		// TODO Auto-generated method stub
 		
 
-		Scanner pedirDatos = new Scanner(System.in);
-		
-		double area;
-		
-		System.out.println("Introduce el radio: ");
-		double radio = pedirDatos.nextDouble();
-		System.out.println("Radio = " + radio);
-		
-		area = Math.PI * (Math.pow(radio, 2));
-		
-		System.out.println("El área es: " + Math.round(area) + " --- " + area);
+		// Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario el radio del círculo
+        System.out.print("Ingrese el radio del círculo: ");
+        double radio = scanner.nextDouble();
+
+        // Calcular el área del círculo utilizando la fórmula A = PI * r^2
+        double area = Math.PI * Math.pow(radio, 2);
+
+        // Mostrar el resultado
+        System.out.println("El área del círculo con radio " + radio + " es: " + area);
+
+        // Cerrar el objeto Scanner
+        scanner.close();
 		
 	}
 

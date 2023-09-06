@@ -9,17 +9,25 @@ public class Ejercicio04 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		// Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
 
-		int num1, num2;
-		
-		Scanner pedirDatos = new Scanner(System.in);
-		
-		System.out.println("Introduce el primer número: ");
-		num1 = pedirDatos.nextInt();
-		System.out.println("Introduce el segundo número: ");
-		num2 = pedirDatos.nextInt();
-		
-		System.out.println("El menor es " + Math.min(num1, num2));
+        // Solicitar al usuario el primer número
+        System.out.print("Ingrese el primer número: ");
+        double numero1 = scanner.nextDouble();
+
+        // Solicitar al usuario el segundo número
+        System.out.print("Ingrese el segundo número: ");
+        double numero2 = scanner.nextDouble();
+
+        // Utilizar el método min() de la clase Math para encontrar el menor número
+        double menor = Math.min(numero1, numero2);
+
+        // Mostrar el resultado
+        System.out.println("El menor número es: " + menor);
+
+        // Cerrar el objeto Scanner
+        scanner.close();
 		
 
 

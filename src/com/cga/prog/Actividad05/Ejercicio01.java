@@ -16,36 +16,32 @@ public class Ejercicio01 {
 		// TODO Auto-generated method stub
 		
 		
-		// Declaramos las variables.
-		double IMC;
-		float peso, altura;
-		String estado;		
-		
-		// Asignamos los valores a las variables.
-		Scanner pedirDatos = new Scanner(System.in);
-		
-		System.out.println("Introduce el peso en 'Kg': ");
-		peso = pedirDatos.nextFloat();
-		System.out.println("Introduce la altura en 'cm': ");
-		altura = pedirDatos.nextFloat();
-		estado = "Tu estado de salud es ";
-		
-		// Se utiliza Math.pow para la operación exponencial.
-		IMC = peso / (Math.pow((altura / 100), 2));
-		
-		// Se utiliza Math.round para el redondeo.
-		IMC =  Math.round(IMC);
-		
-		System.out.println("Tu IMC es: " + Math.round(IMC));
-		System.out.println(IMC);
-		
-		if (IMC >= 25) {
-			System.out.println(estado + "bajo.");
-		} else if (IMC <= 18 ){
-			System.out.println(estado + "alto.");
-		} else {
-			System.out.println(estado + "óptimo");
-		}
+		// Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario su peso en kilogramos
+        System.out.print("Ingrese su peso en kilogramos: ");
+        double peso = scanner.nextDouble();
+
+        // Solicitar al usuario su altura en metros
+        System.out.print("Ingrese su altura en metros: ");
+        double altura = scanner.nextDouble();
+
+        // Calcular el IMC utilizando la fórmula IMC = peso / (altura^2)
+        double imc = peso / Math.pow(altura, 2);
+
+        // Mostrar el resultado
+        System.out.println("Su Índice de Masa Corporal (IMC) es: " + imc);
+
+        // Determinar el intervalo de peso saludable
+        if (imc >= 18 && imc <= 25) {
+            System.out.println("Su peso está dentro del intervalo saludable.");
+        } else {
+            System.out.println("Su peso está fuera del intervalo saludable.");
+        }
+
+        // Cerrar el objeto Scanner
+        scanner.close();
 		
 
 

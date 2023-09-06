@@ -10,26 +10,25 @@ public class Ejercicio03 {
 		// TODO Auto-generated method stub
 		
 		
-		int num1, num2;
-		
-		Scanner pedirDatos = new Scanner(System.in);
-		System.out.println("Introduce el primer número: ");
-		num1 = pedirDatos.nextInt();
-//		System.out.println("Has introducido: " + num1);
-		
-		System.out.println("Introduce el segundo número: ");
-		num2 = pedirDatos.nextInt();
-//		System.out.println("Has introducido: " + num2);
-		
-		if (num1 > num2) {
-			System.out.println(num1 + " es mayor.");
-		} else if ( num1 < num2) {
-			System.out.println(num2 + " es mayor");
-		} else {
-			System.out.println("Son iguales.");
-		}
-		
-		System.out.println("El mayor es " + Math.max(num1, num2));
+		// Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar al usuario el primer número
+        System.out.print("Ingrese el primer número: ");
+        double numero1 = scanner.nextDouble();
+
+        // Solicitar al usuario el segundo número
+        System.out.print("Ingrese el segundo número: ");
+        double numero2 = scanner.nextDouble();
+
+        // Utilizar el método max() de la clase Math para encontrar el mayor número
+        double mayor = Math.max(numero1, numero2);
+
+        // Mostrar el resultado
+        System.out.println("El mayor número es: " + mayor);
+
+        // Cerrar el objeto Scanner
+        scanner.close();
 
 	}
 
