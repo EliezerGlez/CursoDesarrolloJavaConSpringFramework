@@ -1,5 +1,8 @@
 //https://jarroba.com/herencia-en-la-programacion-orientada-a-objetos-ejemplo-en-java/
-
+//https://dam.org.es/
+//https://ellibrodepython.com/introduccion-python
+//https://ns2.elhacker.net/descargas/manuales/Lenguajes%20de%20Programacion/Java/Ejercicios-de-Programacion-en-Java.pdf
+	
 package com.cga.prog.PolimorfismoInterface;
 
 import java.util.ArrayList;
