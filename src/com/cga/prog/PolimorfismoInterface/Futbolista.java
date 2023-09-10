@@ -49,7 +49,7 @@ public class Futbolista extends Persona{
 	}
 	
 	public void entrenar() {
-		System.out.println("El futbolista (persona) entrenando");
+		System.out.println("El futbolista (persona) está entrenando");
 	}
 	
 }

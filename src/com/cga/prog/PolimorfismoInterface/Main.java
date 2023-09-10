@@ -22,12 +22,42 @@ public class Main {
 		integrantes.add(iniesta);
 		integrantes.add(raulMartinez);
 		
-		System.out.println("Todas las personas comienzan una concentración.");
+//		Concentración
+		System.out.println("Todas las personas comienzan una concentración."
+				+ "(Todos ejecutan el mismo método.)");
 		for (Persona integrante : integrantes) {
-			System.out.println(integrante.getNombre() + " " + integrante.getApellidos() + " --> ");
+			System.out.print(integrante.getNombre() + " " + integrante.getApellidos() + " --> ");
 			integrante.Concentrarse();
 			
 		}
+		
+//		Viaje
+		System.out.println("\nTodos los integrantes viajan para jugar un partido."
+				+ "(Todos ejecutan el mismo método).");
+		for (Persona integrante: integrantes) {
+			System.out.print(integrante.getNombre() + " " + integrante.getApellidos() + " --> ");
+			integrante.Viajar();
+		}
+		
+//		Entrenamiento
+		System.out.println("\nEntrenamiento: Solo el entrenador y el futbolista "
+				+ "tienen métodos para entrentar:");
+		System.out.print(delBosque.getNombre() + " " + delBosque.getApellidos() + " --> ");
+		delBosque.dirigirEntreno();
+		System.out.print(iniesta.getNombre() + " " + iniesta.getApellidos() + " --> ");
+		iniesta.entrenar();
+		
+//		Masaje
+		System.out.println("\nMasaje: Solo el masajista tiene el método para dar un masaje:");
+		System.out.print(raulMartinez.getNombre() + " " + raulMartinez.getApellidos() + " --> ");
+		raulMartinez.darMasaje();
+		
+//		Partido de fútbol
+		System.out.println("\nPartido: Solo el entrenador y el futbolista tienen métodos para el partido");
+		System.out.print(delBosque.getNombre() + " " + delBosque.getApellidos() + " --> ");
+		delBosque.dirigirPartido();
+		System.out.print(iniesta.getNombre() + " " + iniesta.getApellidos() + " --> ");
+		iniesta.jugarPartido();
 		
 	}
 
